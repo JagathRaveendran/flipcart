@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip cart</title>
+    <style>
+        body
+        {
+            background-color: aliceblue;
+        }
+        .header1
+        {
+            border: 2px solid rgb(251, 251, 251);
+            background-color: rgba(255, 255, 255, 0.986);
+            height: 90px;
+            width: 1413px;
+            position: fixed;
+            
+        }
+        .header2
+        {
+            
+            padding-top: 0px;
+            border: 2px solid rgb(251, 251, 251);
+            /* width: 1413px; */
+            width: 100%;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.986);
+            padding-bottom: 10px;
+        }
+        .logo
+        {
+            width: 140px;
+        }
+        li
+        {
+            display: inline;
+        }
+        .sub
+        {
+            padding-left: 40px;
+            
+            
+        }
+        .plus{
+            font-weight: 20px;
+            font-size: 15px;
+        }
+        .search
+        {
+            border: 2px solid rgb(224, 240, 246) ;
+            border-radius: 10px;
+            width: 665px;
+            height: 38px;
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 17px;
+            padding-left: 10px;
+            position: relative;
+            margin-left: 50px;
+            margin-top: 10px;
+            background-color: rgb(224, 240, 246);
+            
+        }
+        .seller
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 20px;
+        }
+        .signin
+        {
+            padding-left: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .cart
+        {
+            padding-left: 70px;    
+        }
+        .menu
+        {
+            padding-left: 40px;
+        }
+        .nav
+        {
+            padding-left: 70px;
+            padding-top: 15px;
+        }
+        .a
+        {
+            padding-left: 60px;
+        }
+        .c
+        {
+            padding-left: 65px;
+        }
+        .b
+        {
+            padding-left: 40px;
+        }
+        .d
+        {
+            padding-left: 37px;
+        }
+        .e
+        {
+            padding-left: 36px;
+        }
+        .f
+        {
+            padding-left: 49px;
+        }
+        .g
+        {
+            padding-left: 84px;
+        }
+        .h
+        {
+            padding-left: 53px;
+        }
+        .i
+        {
+            padding-left: 43.5px;
+        }
+        .j
+        {
+            padding-left: 77px;
+        }
+        .k
+        {
+            padding-left: 79px;
+        }
+        .c1
+        {
+            padding-top: 20px;
+            width: 1413px;
+        }
+        .c2
+        {
+            padding-top: 20px;
+            width: 1413px;
+        }
+        .s1
+        {
+            padding-left: 10px;
+        }
+        .s2
+        {
+            padding-left: 5px;
+        }
+        .bor1
+        { 
+            margin-left:10px ;
+            border: 2px solid rgb(255, 255, 255);
+            height: 350px;
+            width: 1100px;
+            background-color: rgb(255, 255, 255);
+            
+            
+        }
+        .b1
+        {
+            
+            padding-left: 20px;
+            padding-left: 50px;
+           
+            
+           
+            
+            
+        }
+        .b2
+        {
+            
+            padding-left: 20px;
+            
+            
+        }
+        .b3
+        {
+            
+            padding-left: 20px;
+            
+            
+        }
+        .b4
+        {
+            
+            padding-left: 20px;
+            
+            
+        }
+        .b5
+        {
+            
+            padding-left: 20px;
+            
+            
+        }
+        .borhead
+        {
+            padding: 15px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            
+        }
+        #abc
+        {
+            padding-left: 10px;
+            
+            
+           
+        }
+        .top
+        {
+            padding-bottom: 10px;
+        }
+        .sponser
+        {
+            padding-bottom: 20px;
+        }
+        .boult
+        {
+            float: right;
+        }
+        .boult
+        {
+            padding-right: 30px;
+        }
+        .offers
+        {
+            padding-top: 50px;
+        }
+        .con
+        {
+            margin-top: 20px;
+            border: 2px solid rgb(248, 248, 248);
+            background-color: white;
+            padding-bottom: 20px;
+
+        }
+        .fb
+        {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 20px;
+        }
+        .jj
+        {
+            padding-left: 15px;
+        }
+        #dis
+        {
+            padding-left: 10px;
+        }
+        .dist
+        {
+            padding-left: 2px;
+        }
+        .borderr
+        { margin-top: 10px;
+            border: 2px solid white;
+            background-color: white;
+            height: 330px;
+        }
+       .dow
+       {
+        background-color: white;
+        
+       }
+       .dow1
+       {
+        background-color: white;
+       }
+       .down
+       {
+        border: 2px solid white;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        background-color: #fff;
+       }
+       .end
+       {
+        border: 2px solid #eaeaea;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #eaeaea;
+       }
+      
+       .hedd
+       {
+        color: rgb(176, 176, 176);
+        padding-right: 40px;
+       }
+    
+      
+       .section
+       {
+        color: rgb(255, 255, 255);
+        font-size: 8px;
+        margin-top: 10px;
+        padding-top: 20px;
+        float: right;
+        text-align: left;
+        padding-right: 60px;
+        padding-left: 20px;
+       
+        
+        
+       }
+       .bbb
+       {
+        border: 2px solid rgb(0, 0, 0) ;
+        height: 300px;
+        background-color: rgb(0, 0, 0);
+        padding-right: 150px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .payment
+       {
+        padding-top: 250px;
+        padding-left: 50px;
+        color: white;
+       }
+       .disd
+       {
+        padding-right: 20px;
+        
+       }
+       .sell
+       {
+        padding-left: 30px;
+       }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <nav>
+                <img  class="logo" src="img/fl.svg" alt="">
+                <input type="text" value="" class="search" placeholder="Search for Products, Brands and More" >
+
+                <li class="seller" title="Become a Seller"><img src="shop icon.svg" alt=""> Become a Seller</li>
+                
+                <li class="signin"><img src="img/user icon.svg" alt=""> Sign in</li>
+
+                <li class="cart"> <img src="img/cart icon.svg" alt="">Cart</li>
+                
+                <li class="menu"><img src="img/menupng.svg" alt=""></li>
+            </nav>
+            <li class="sub">
+                <li style="color: gray; font-family: Verdana, Geneva, Tahoma, sans-serif;"><i>Explore</i></li><li class="plus" style="color: rgb(255, 255, 12); font-family: Verdana, Geneva, Tahoma, sans-serif;"><i> Plus</i></li>
+                <li><img src="img/plusicon.svg" alt=""></li>
+            </li>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="header2">
+
+        <nav class="nav">
+            
+            <li class="off"><img src="img/offerspng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/phonepng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/tvpng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/washingpng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/fashionpng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/candypng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/kitchenpng'.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/furnichurepng.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/ff.png" alt="" width="70px"></li>
+            <li class="a"><img src="img/grocerypng.png" alt="" width="70px"></li>
+        </nav>
+        <nav>
+            <li class="c">Top Offerrs</li>
+            <li class="b">Mobile & Tablets</li>
+            <li class="d">Electronics</li>
+            <li class="e">TV & Appliances</li>
+            <li class="f">Fashion</li>
+            <li class="g">Beauty</li>
+            <li class="h">Home & Kitchen</li>
+            <li class="i">Furbiture</li>
+            <li class="j">Fkights</li>
+            <li class="k">Grocery</li>
+        </nav>
+    </div>
+        </div>
+    </header>
+    <div>
+        <img class="c1" src="img/cover1img.jpg" alt="">
+    </div>
+    <div class="sponser">
+        <img class="c2" src="img/spon.jpg" alt="">
+    </div>
+    <nav class="top">
+        <li><img class="s1" src="img/mi.jpg" alt="" width="460px"></li>
+        <li><img class="s2" src="img/lapc.jpg" alt="" width="460px"></li>
+        <li><img class="s2" src="img/washc.jpg" alt="" width="460px"></li>
+    </nav>
+    <div >
+        <aside>
+            <li class="boult"><img src="img/boult.png" alt="" width="230px" height="355px"></li>
+        </aside>
+        
+        <div class="bor1">
+
+            <h2 class="borhead">Best Mobile</h2>
+            <li id="abc" class="b1" ><img src="img/gpixel.jpeg" alt="" width="20px" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+            <li id="abc" class="b2"><img src="img/moto.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:210px; border-radius: 5px; padding: 20px;"></li>
+            <li id="abc" class="b3"><img src="img/s22.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+            <li id="abc" class="b4"><img src="img/realme.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+            <li id="abc" class="b5"><img src="img/f34.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+            
+        </div>
+
+
+    </div>
+    <div class="offers">
+        <li><img src="img/fridgeoff.jpg" alt="" width="466px"></li>
+        <li><img src="img/realmeoff.jpg" alt=""  width="466px"></li>
+        <li><img src="img/mattresoff.jpg" alt=""  width="466px"></li>
+        <li><img src="img/insinix.jpg" alt=""  width="466px"></li>
+        <li><img src="img/flightoff.jpg" alt=""  width="466px"></li>
+        <li><img src="img/flight2off.jpg" alt="" width="466px"></li>
+    </div>
+    <div class="con">
+        <h3 class="fb">Featured Brands</h3>
+        <li class="jj"><img src="img/colgate.jpeg" alt=""></li>
+        <li id="dis"><img src="img/oneplus.jpeg" alt=""></li>
+        <li id="dis"><img src="img/niva.jpeg" alt=""></li>
+    </div>
+    <div>
+        <li><img src="img/speakers.jpeg" alt="" width="466px"></li>
+        <li><img src="img/chaires.jpg" alt="" width="466px"></li>
+        <li><img src="img/mixer.png" alt="" width="466px"></li>
+    </div>
+    <div class="borderr">
+        <h3 style="padding-left: 20px;">Top Deals</h3>
+        <li style="padding-left: 15px;"><img src="img/shoe.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li><img class="dist" src="img/shoe2.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li><img class="dist" src="img/watch.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li><img class="dist" src="img/shoe3.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li><img class="dist" src="img/spec.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li><img class="dist" src="img/shoe4.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li><img class="dist" src="img/shoe5.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 150px; height:212px; border-radius: 5px; padding: 20px;"></li>
+    </div>
+    <div class="down">
+        <h3 style="padding-left: 20px;">Electronics Gadgets</h3>
+        <li style="padding-left: 20px;"><img class="dow1" src="img/smd.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li style="padding-left: 25px;"><img class="dow" src="img/trimd.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li style="padding-left: 25px;"><img class="dow" src="img/printd.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li style="padding-left: 25px;"><img class="dow" src="img/ipadd.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li style="padding-left: 25px;"><img class="dow" src="img/keychaind.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        <li style="padding-left: 25px;"><img class="dow" src="img/cased.jpeg" alt="" style="border: 2px solid rgb(211, 211, 211); width: 160px; height:212px; border-radius: 5px; padding: 20px;"></li>
+        
+    </div>
+    <div class="end">
+        <h3>Top Stories : Brand Directory</h3>
+        <h1>Flipkart: The One-stop Shopping Destination</h1>
+        <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. <br><br>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. <br><br> </p>
+    <h2>Flipkart Plus</h2>
+    <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! </p>
+    <br><br>
+    
+    <p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:</p>
+    <p>An annual Zomato Gold membership</p>
+    <p>An annual Hotstar Premium membership</p>
+    <p>6 months Gaana plus subscription</p>
+    <p>Rupees 550 instant discount on flights on ixigo</p>
+    <p>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p>
+    <h2>No Cost EMI</h2>
+    <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+    <br><br>
+    <h2>Mobile Exchange Offers</h2>
+    <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. </p>
+    <br><br>
+    <h2>What Can You Buy From Flipkart?</h2>
+    <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - </p>
+    <br><br>
+    <h2>Electronic Devices and Accessories</h2>
+    <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our <b>Back To College Store</b> segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler. <b>Back To College Store</b>  segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.</p>
+    <p>Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. </p>
+    <br><br>
+    <p>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.</p>
+    <br><br>
+    <p>How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.</p>
+    <h2>Lifestyle</h2>
+    <p>Flipkart, <b>'India ka Fashion Capital'</b>, is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time. </p>
+
+</div>
+<div class="bbb">
+    <footer >
+        <aside >
+        
+                <div id="through" class="section">
+                    <li class="hedd">Registered Office Address:</li>
+                    <p>Flipkart Internet Private Limited, </p>
+                    <p> Buildings Alyssa, Begonia & </p>
+                    <p> Buildings Alyssa, Begonia & </p>
+                    <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p> Bengaluru, 560103, </p>
+                    <p> Karnataka, India </p>
+                    <p> CIN : U51109KA2012PTC066107 </p>
+                    <p> Telephone: 044-45614700</p>
+                </div>
+                    
+                <div class="section">
+                    <li class="hedd">Mail Us:<li>
+                    <p>Flipkart Internet Private Limited, </p>
+                    <p> Buildings Alyssa, Begonia & </p>
+                    <p> Clove Embassy Tech Village, </p>
+                    <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p> Bengaluru, 560103, </p>
+                    <p> Karnataka, India</p>
+                </div>
+                <div class="section">
+                    <li class="hedd">SOCIAL</li>
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>YouTube</p>
+                </div>
+                    
+                <div class="section">
+                    <li class="hedd">CONSUMER POLICY</li>
+                    <p>Cancellation & Returns</p>
+                    <p>Terms Of Use</p>
+                    <p>Security</p>
+                    <p>Privacy</p>
+                    <p>Sitemap</p>
+                    <p>Grievance Redressal</p>
+                    <p>EPR Compliance</p>
+                </div>
+                    
+                <div class="section">
+                    <li class="hedd">HELP<li>
+                    <p>Payments</p>
+                    <p>Shipping</p>
+                    <p>Cancellation & Returns</p>
+                    <p>FAQ</p>
+                    <p>Report Infringement</p>
+                </div>
+                    
+                <div class="section">
+                    <li class="hedd">ABOUT</li>
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Flipkart Stories</p>
+                    <p>Press</p>
+                    <p>Flipkart Wholesale</p>
+                    <p>Cleartrip</p>
+                    <p>Corporate Information</p>
+                </div>
+            
+                
+    </aside>
+      
+    </footer>
+    <div class="payment">
+        
+        <li class="sell"><img src="img/endcart.svg" alt="">Become a Seller</li>
+        <li class="disd"><img src="img/endmetior.svg" alt="">Advertise</li>
+        <li class="disd"><img src="img/endgift.svg" alt="">Gift Cards</li>
+        <li class="disd"><img src="img/endqustion.svg" alt="">Help Center</li>
+        <li class="disd">© 2007-2023 Flipkart.com</li>
+        <li class="disd"><img src="img/endcards.svg" alt=""></li>
+    </div>
+  
+</div>
+
+
+   
+</body>
+</html>
+
